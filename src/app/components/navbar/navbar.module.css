@@ -1,0 +1,60 @@
+
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: blueviolet;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.header nav {
+  background-color: brown;
+  width: 95%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header nav h1 {
+  font-size: 25px;
+  font-weight: bold;
+  padding-left: 8px;
+}
+
+.header nav ul {
+  display: flex;
+}
+
+.header nav ul li {
+  padding-right: 25px;
+}
+
+.p {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .header nav ul li {
+    display: none;
+  }
+
+  .p {
+    display: block;
+  }
+
+  .mobileview {
+    z-index: 10;
+    background-color: rgb(216, 135, 42);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+  }
+
+  .mobileview div {
+    padding-top: 35%;
+    padding-bottom: 50%;
+    padding-left: 50%;
+  }
+} 
